@@ -1,0 +1,120 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "prayer assistant",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "PrayerTimeRequestIntent",
+          "slots": [
+            {
+              "name": "prayer",
+              "type": "PrayerType"
+            }
+          ],
+          "samples": [
+            "when is {prayer} salah",
+            "what time is {prayer} salah",
+            "what times {prayer}",
+            "whens {prayer}",
+            "when is {prayer}",
+            "what time is {prayer}"
+          ]
+        },
+        {
+          "name": "NextPrayerRequestIntent",
+          "slots": [],
+          "samples": [
+            "which salah is next",
+            "which prayer is next",
+            "how long until the next salah",
+            "how long until the next prayer",
+            "what salah is next",
+            "when is the next salah",
+            "what time is the next salah",
+            "what prayer is next",
+            "what is the next prayer",
+            "when is the next prayer",
+            "what time is the next prayer"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Isha",
+                "synonyms": [
+                  "e sha",
+                  "esha"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Maghrib",
+                "synonyms": [
+                  "magreeb",
+                  "magrib"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Asr",
+                "synonyms": [
+                  "asir",
+                  "asor",
+                  "aser"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dhuhr",
+                "synonyms": [
+                  "zhuhr",
+                  "dooher",
+                  "zooher",
+                  "zoo her",
+                  "do her"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Fajr",
+                "synonyms": [
+                  "fudger",
+                  "fuzzer"
+                ]
+              }
+            }
+          ],
+          "name": "PrayerType"
+        }
+      ]
+    }
+  },
+  "version": "11"
+}
