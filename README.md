@@ -1,4 +1,4 @@
-# AWS Alexa Skill - Prayer Assistant
+Alexa Skill - Prayer Assistant
 Amazon Alexa Skill built in Python to allow Muslims all over the world quickly and easily find out prayer times.
 
 This Skill uses abdulrcs's Daily Prayer Time API to fetch the current days, as well as tomorrows, prayer times, based on a city or province as a query parameter. This paramater is fetched from the users Alexa device via the ASK (Alexa Skills Kit) SDK. By using the ASK SDK to fetch the device ID and authorization tokens, we can use these two pieces in conjunction to fetch the devices local address, as well as timezone, which we can then feed to the Prayer Times API for accurate timings to give to the user. 
